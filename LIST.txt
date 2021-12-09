@@ -1,0 +1,66 @@
+LIST:
+   It is dynamic array.We can overcome the disadvantage of the Array collections.
+       1.Grow dynamically in its Size.
+	   2.Allows Duplicates.
+	   3.Maintains the insertion order.
+	   
+	   Syntax:
+	     List<String>fruits = new ArrayList<String>();
+		  
+    For List we need to Import both Array and List.They are 
+	     -->import java.util.list;
+		 -->import java.util.ArrayList;
+	
+	LIST IS AN INTERFACE WHICH EXTENDS COLLECTIONS.
+	IN INTERFACE THE OBJECT CANT BE INSTANTIATE.
+	TO ACCESS THE METHODS OF THE INTERFACE WE CAN CREATE A CLASS WHICH IS CALLED IMPLEMENTATION CLASS.
+	IMPLEMENTATION CLASS FOR THE LIST IS ARRAYLIST.
+
+STEPS TO WRITE THE CODE FOR LIST:
+   1.CREATING AN EMPTY LIST.
+   2.ADDD THE ELEMENTS TO THE LIST.
+   3.TO FIND THE SIZE OF THE LIST.
+          
+        INT SIZE=OBJECT.SIZE();
+   4.PRINT THE LIST
+       USING FOR LOOP
+        FOR(int i=0;i<size;i++)
+   5.GETTING AN ELEMENT FROM THE LIST
+          object.get(byindex)
+   6.INSERT BASED ON POSITION
+        object.add(index,"")
+ 
+LIST CAN BE PRINTED IN THREE METHODS:
+      1.BY DIRECTLY
+	  2.BY USING FOR LOOP WITH INDEX ITERATION.
+	  3.BY USING FOREACH METHOD.
+	  
+	   
+	   FOR EACH METHOD:
+	        IN THIS METHOD WE DONT HAVE THE INDEX OR WE CANT ACCESS USING INDEX.
+			  for (String eachfruit:fruits)
+			     
+			TO REMOVE THE ELEMENT FROM THE LIST 
+             //REMOVE AN ENTRY 
+                  OBJECT.REMOVE(INDEX);
+             //WE CAN REMOVE AN ENTRY BY USING IT NAME ALSO i.e,IF THE ELEMENTS PRESENT FOR TWO TIMES IT REMOVES THE FIRST ENTRY OR OCCURENCE.
+            TO CLEAR ALL THE ENTRIES FROM THE LIST 
+                 object.clear();
+IMPORTANT QUESTION:
+    WILL JAVA THROW AN EXCEPTION IN A EMPTY LIST?
+        NO EXCEPTIONS WILL THROWN WHEN AN EMPTY LIST IS ACCESSED.
+METHODS OF LIST:
+        -->TO REMOVE ALL THE COMMON PARAMETER 
+		      object.removeaAll();
+		-->TO RETAIN ALL THE COMMON PARAMETER 
+              Object.retainAll();		
+		
+		-->TO SORT THE LIST/COLLECTIONS:
+		    Collections.Sort();
+		-->TO REVERESE THE LIST:
+            Collections.reverse();		
+   	
+			
+			
+			
+      
